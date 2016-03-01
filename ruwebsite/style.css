@@ -1,0 +1,211 @@
+/* homepage */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{
+    margin: 0px;
+    width: 100%;
+}
+/* backgroung picture*/
+#div1 {
+  background-image: url("back-03.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height:720px;
+  width: auto;
+}
+#div3
+{
+clear: both;
+}
+/* upperright buttons */
+#rutgers {
+  width:440px;
+  height:auto;
+  padding-top: 100px;
+  vertical-align: top;
+  text-align: center;
+}
+
+#div2 {
+  height:600px;
+  width: 730px;
+  float:right;
+}
+
+#rulogo {
+  padding-top:50px;
+  padding-bottom: 20px;
+}
+.rightbox {
+  height:300px;
+  width: 590px;
+  margin:0;
+  float:left;
+  clear:both;
+}
+.button {
+  height:190px;
+  width: 220px;
+  display: inline-block;
+  padding: 0px;
+}
+.img {
+  width:200px;
+  height:auto;
+  margin-left: 8px;
+  -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+}
+
+.img:hover {
+  opacity: 1;
+            -webkit-transition: all 0.5s ease-in;
+            -moz-transition: all 0.5s ease-in;
+            -o-transition: all 0.5s ease-in;
+            transition: all 0.5s ease-in;
+            box-shadow: inset 0 0 0 0 rgba(0,0,0,0.6), 0 0 10px rgba(0,0,0,0.3);
+}
+/* pagebreaker after backgroung picture*/
+
+#pagebreaker {
+height:15px;
+width: auto;
+}
+
+.pic {
+  width:100%;
+  height:auto;
+}
+
+/* bottom background*/
+#div5 {
+  background-image: url("bottom.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height:150px;
+  width: auto;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 20px;
+}
+
+}
+
+a:link {
+  font-family: Arial,sans-serif;
+  color:#ffffff;
+  text-decoration: none;
+}
+/* visited link */
+a:visited {
+    color: #ffffff;
+}
+/* mouse over link */
+a:hover {
+    color: #c4d6f5;
+    text-decoration: underline;
+}
+/* bottom and copyright*/
+
+.main {
+  width:320px;
+height:32px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 35px;
+padding-left: auto;
+padding-left: auto;}
+.small {display:inline;
+float:left;}
+.a {font-family: Arial;
+color:#ffffff;
+font-size: 14px;
+margin-top: 7px;
+}
+.b {
+width:30px;
+height:auto;}
+#up1 {
+height:32px;
+width: 35px;
+}
+#up2 {
+height:32px;
+width: 100px;
+margin: 0;
+padding: 0;
+}
+#up3 {
+height:32px;
+width:35px;
+}
+#up4 {
+height:32px;
+width: 150px;
+margin: 0;
+padding: 0;
+}
+#down {
+height:32px;
+width: 400px;
+margin-left: auto;
+margin-right: auto;
+text-align:center;
+}
+
+/* Version history page */
+#scroll {
+font: 12px Arial;
+margin:auto;
+margin-top: 10px;
+}
+
+#scrollbox {
+height:460px;
+width:450px;
+margin-left: auto;
+margin-right: auto;
+background-color: #ffffff;
+box-shadow: 0px 0px 5px 3px #cfcbcf;
+border-radius: 5px;
+}
+
+#v01 {
+height:25px;
+width:370px;
+margin: auto;
+padding-top: 12px;
+font-family: Arial;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+}
+
+::-webkit-scrollbar-track {
+background: #e8e5e8;
+border-radius: 10px;
+box-shadow: inset 0 0 10px #cfcbcf;
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background: #cfcdcf;
+box-shadow: inset 0 0 6px #757475;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #a8a6a8;
+box-shadow: inset 0 0 6px #cfcbcf;
+}
+
+.fixed {background-color: #f0d6ec;
+border-radius: 2px}
+.new {background-color: #b4fae3;
+border-radius: 2px}

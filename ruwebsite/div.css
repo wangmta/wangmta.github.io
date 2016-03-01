@@ -1,0 +1,45 @@
+/* upperright buttons */
+#rutgers {
+  width:440px;
+  height:auto;
+  padding-top: 100px;
+  vertical-align: top;
+  text-align: center;
+}
+#div1 {
+  background-image: url("back-03.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height:720px;
+  width: auto;
+}
+
+#div2 { 
+  height:600px;
+  width: 730px;
+  float:right;
+}
+
+#rulogo {
+  padding-top:50px;
+  padding-bottom: 20px;
+}
+.rightbox {
+  height:300px;
+  width: 590px;
+  margin:0;
+  float:left;
+  clear:both;
+}
+.button {
+  height:190px;
+  width: 220px;
+  display: inline-block;
+  padding: 0px;
+}
+.img {
+  width:200px;
+  height:auto;
+  margin-left: 5px;
+  text-align: center;
+}
