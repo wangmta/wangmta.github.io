@@ -103,11 +103,12 @@ a:link {
 /* visited link */
 a:visited {
     color: #ffffff;
+    text-decoration: none;
 }
 /* mouse over link */
 a:hover {
     color: #c4d6f5;
-    text-decoration: underline;
+    text-decoration: none;
 }
 /* bottom and copyright*/
 
