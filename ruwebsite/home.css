@@ -1,57 +1,79 @@
-/* homepage */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{
     margin: 0px;
     width: 100%;
+    overflow:scroll;
+    overflow-x: hidden;
 }
-/* backgroung picture*/
-#div1 {
-  background-image: url("back-03.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  height:720px;
+div { width: 100%; }
+
+.body {margin: 0px;
+width: 100%;}
+
+@font-face {
+    font-family: "roboto";
+    src: url(roboto-regular.ttf);
+}
+/* banner*/
+
+#banner {
+background: rgba(20, 83, 184, 0.84);
+position:fixed;
+top:0;
+height:10%;
+width: 100%;
+z-index: 100;
+-webkit-box-shadow: -1px 2px 21px -1px rgba(102,99,102,1);
+-moz-box-shadow: -1px 2px 21px -1px rgba(102,99,102,1);
+box-shadow: -1px 2px 21px -1px rgba(102,99,102,1);
+}
+#rulogo {
+  height:100%;
   width: auto;
 }
-#div3
-{
-clear: both;
+#bannertext  {
+  font-size:2.5vh;
+  color: #ffffff;
+  font-family: "roboto";
 }
-/* upperright buttons */
-#rutgers {
-  width:440px;
-  height:auto;
-  padding-top: 100px;
-  vertical-align: top;
-  text-align: center;
-}
-
-#div2 {
-  height:600px;
-  width: 730px;
-  float:right;
-}
-
-#rulogo {
-  padding-top:50px;
-  padding-bottom: 20px;
-}
-.rightbox {
-  height:300px;
-  width: 590px;
-  margin:0;
+.banner {display: inline;
   float:left;
-  clear:both;
+  height:80%;
+  width: auto;
+  margin-left: 1%;
+  margin-top: 0.5%;
 }
+
+/* introduction textbox*/
+span {
+  color: #ffffff;
+  font-size: 18px; font-size: 1.5vw;
+}
+#intro {
+  color: #ffffff;
+  font-size: 12px; font-size: 1.2vw;
+  font-family:"roboto"
+}
+
+#box1{
+  height:40vh;
+  width:50%;
+  margin-top: 20%;
+  margin-left: 40%;
+  align-content: center;
+  }
+
+/* buttons*/
 .button {
-  height:190px;
-  width: 220px;
-  display: inline-block;
+  height:auto;
+  width: auto;
+  display: inline;
   padding: 0px;
 }
 .img {
-  width:200px;
+  width:30%;
   height:auto;
-  margin-left: 8px;
+  margin: 0px;
   -webkit-transition: all 0.5s ease;
    -moz-transition: all 0.5s ease;
      -o-transition: all 0.5s ease;
@@ -67,36 +89,50 @@ clear: both;
             transition: all 0.5s ease-in;
             box-shadow: inset 0 0 0 0 rgba(0,0,0,0.6), 0 0 10px rgba(0,0,0,0.3);
 }
-/* pagebreaker after backgroung picture*/
+/* container of intro text and buttons*/
 
-#pagebreaker {
-height:15px;
-width: auto;
+#div2 {
+  height:100%;
+  width: 70%;
+  float:left;
+  position: absolute;
+  top: 0;
+  left: 10;
+  z-index: 10;
 }
 
+/* bus section*/
+#div3 {
+  position:relative;
+  }
+
+
+/* pagebreaker after backgroung picture*/
+
+.pagebreaker {
+height:30px;
+width: auto;
+position:relative;
+}
+
+/* news and bookmark sections*/
 .pic {
   width:100%;
   height:auto;
+  position:relative;
 }
 
 /* bottom background*/
 #div5 {
-  background-image: url("bottom.png");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  height:150px;
-  width: auto;
-  margin-top: 50px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  background: #1453b8;
+  min-height:140px;
+  position:absolute;
+  margin:0px;
   padding-top: 20px;
 }
 
-}
-
 a:link {
-  font-family: Arial;
+  font-family: "roboto";
   color:#ffffff;
   text-decoration: none;
 }
@@ -113,7 +149,7 @@ a:hover {
 /* bottom and copyright*/
 
 .main {
-  width:320px;
+width:320px;
 height:32px;
 margin-left: auto;
 margin-right: auto;
@@ -122,7 +158,7 @@ padding-left: auto;
 padding-left: auto;}
 .small {display:inline;
 float:left;}
-.a {font-family: Arial;
+.a {font-family: "roboto";
 color:#ffffff;
 font-size: 14px;
 margin-top: 7px;
@@ -155,12 +191,14 @@ height:32px;
 width: 400px;
 margin-left: auto;
 margin-right: auto;
+margin-top: 0px;
+margin-bottom: 0px;
 text-align:center;
 }
 
 /* Version history page */
 #scroll {
-font: 12px Arial;
+font: 12px "roboto";
 margin:auto;
 margin-top: 10px;
 }
@@ -180,7 +218,7 @@ height:25px;
 width:370px;
 margin: auto;
 padding-top: 12px;
-font-family: Arial;
+font-family: "roboto";
 }
 
 /* Scrollbar styles */
