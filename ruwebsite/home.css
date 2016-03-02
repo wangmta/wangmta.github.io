@@ -1,3 +1,64 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{
     margin: 0px;
@@ -10,6 +71,7 @@ div { width: 100%; }
 .body {margin: 0px;
 width: 100%;}
 
+/* external font */
 @font-face {
     font-family: "roboto";
     src: url(roboto-regular.ttf);
@@ -20,34 +82,57 @@ width: 100%;}
 background: rgba(20, 83, 184, 0.84);
 position:fixed;
 top:0;
-height:10%;
+height:8%;
 width: 100%;
 z-index: 100;
 -webkit-box-shadow: -1px 2px 21px -1px rgba(102,99,102,1);
 -moz-box-shadow: -1px 2px 21px -1px rgba(102,99,102,1);
 box-shadow: -1px 2px 21px -1px rgba(102,99,102,1);
 }
+
+.banner {
+    display: inline;
+    float:left;
+    height: 20%;
+    width: auto;
+    min-height: 30px;
+    margin-left: 0px;
+    margin-top: 0.5%;
+}
+#banner1 {
+  margin-left: 1%;
+}
 #rulogo {
-  height:100%;
-  width: auto;
+  width:20vh;
+  height: auto;
+  position: relative;
 }
 #bannertext  {
-  font-size:2.5vh;
+  font-size: 2vh;
   color: #ffffff;
   font-family: "roboto";
+  margin-top: 2vh;
+  margin-left: 2vh;
 }
-.banner {display: inline;
+
+/* container of intro text and buttons*/
+
+#div2 {
+  height:100%;
+  width: 70%;
   float:left;
-  height:80%;
-  width: auto;
-  margin-left: 1%;
-  margin-top: 0.5%;
+  position: absolute;
+  top: 0;
+  left: 10;
+  z-index: 10;
 }
 
 /* introduction textbox*/
+
 span {
   color: #ffffff;
   font-size: 18px; font-size: 1.5vw;
+  line-height: 200%;
 }
 #intro {
   color: #ffffff;
@@ -61,8 +146,11 @@ span {
   margin-top: 20%;
   margin-left: 40%;
   align-content: center;
-  }
+}
 
+#box1 > p {
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+}
 /* buttons*/
 .button {
   height:auto;
@@ -71,7 +159,7 @@ span {
   padding: 0px;
 }
 .img {
-  width:30%;
+  width:40%;
   height:auto;
   margin: 0px;
   -webkit-transition: all 0.5s ease;
@@ -88,17 +176,6 @@ span {
             -o-transition: all 0.5s ease-in;
             transition: all 0.5s ease-in;
             box-shadow: inset 0 0 0 0 rgba(0,0,0,0.6), 0 0 10px rgba(0,0,0,0.3);
-}
-/* container of intro text and buttons*/
-
-#div2 {
-  height:100%;
-  width: 70%;
-  float:left;
-  position: absolute;
-  top: 0;
-  left: 10;
-  z-index: 10;
 }
 
 /* bus section*/
@@ -125,10 +202,11 @@ position:relative;
 /* bottom background*/
 #div5 {
   background: #1453b8;
-  min-height:140px;
+  height:15%;
+  width:100%;
   position:absolute;
   margin:0px;
-  padding-top: 20px;
+  padding-top: 3vh;
 }
 
 a:link {
@@ -149,51 +227,66 @@ a:hover {
 /* bottom and copyright*/
 
 .main {
-width:320px;
-height:32px;
+width:40%;
+height:40%;
 margin-left: auto;
 margin-right: auto;
-margin-top: 35px;
+margin-top: 0;
 padding-left: auto;
-padding-left: auto;}
-.small {display:inline;
-float:left;}
-.a {font-family: "roboto";
-color:#ffffff;
-font-size: 14px;
-margin-top: 7px;
+padding-left: auto;
 }
+.small {display:inline;
+float:left;
+}
+
 .b {
-width:30px;
-height:auto;}
+width:70%;
+height:auto;
+margin-top: 15%;
+}
 #up1 {
-height:32px;
-width: 35px;
+  height:100%;
+  width: 7%;
+margin-left: 15%;
+margin-top:1%;
 }
 #up2 {
-height:32px;
-width: 100px;
-margin: 0;
-padding: 0;
+  height:90%;
+  width: 20%;
+margin-left: 1vh;
+padding-top: 0;
+font-size:1.2vw;
+vertical-align: middle;
 }
 #up3 {
-height:32px;
-width:35px;
+  height:100%;
+  width: 7%;
+  margin-left: 5%;
+  margin-top:1%;
 }
 #up4 {
-height:32px;
-width: 150px;
-margin: 0;
-padding: 0;
+  height:90%;
+  width: 32%;
+margin-left: 1vh;
+font-size:1.2vw;
+vertical-align: middle;
+padding-top: 0;
 }
 #down {
-height:32px;
-width: 400px;
+  width:40%;
+  height:20%;
 margin-left: auto;
 margin-right: auto;
-margin-top: 0px;
+margin-top: 0;
 margin-bottom: 0px;
 text-align:center;
+padding:0px;
+font-family: "roboto";
+font-size:1.2vw;
+color:#ffffff;
+padding-left: auto;
+padding-right: auto;
+clear: both;
 }
 
 /* Version history page */
