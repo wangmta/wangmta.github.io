@@ -3,6 +3,7 @@
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
 /* Styles */
+
 }
 
 /* Smartphones (landscape) ----------- */
@@ -15,6 +16,20 @@ and (min-width : 321px) {
 @media only screen
 and (max-width : 320px) {
 /* Styles */
+body{overflow:hidden;}
+#div2{
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#box1{width:100%;}
+#rutext {font-size: 7vw;line-height: 150%;}
+#intro {font-size: 5vw;}
+.img {
+  width:80%;
+  height:auto;
+  margin: 0px;
+}
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -44,12 +59,14 @@ and (orientation : portrait) {
 @media only screen
 and (min-width : 1224px) {
 /* Styles */
+body {min-height: 900px;}
 }
 
 /* Large screens ----------- */
 @media only screen
 and (min-width : 1824px) {
 /* Styles */
+body {min-height: 1200px;}
 }
 
 /* iPhone 4 ----------- */
@@ -66,10 +83,6 @@ body{
     overflow:scroll;
     overflow-x: hidden;
 }
-div { width: 100%; }
-
-.body {margin: 0px;
-width: 100%;}
 
 /* external font */
 @font-face {
@@ -162,20 +175,6 @@ box-shadow: -1px 2px 21px -1px rgba(102,99,102,1);
   width:40%;
   height:auto;
   margin: 0px;
-  -webkit-transition: all 0.5s ease;
-   -moz-transition: all 0.5s ease;
-     -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-}
-
-.img:hover {
-  opacity: 1;
-            -webkit-transition: all 0.5s ease-in;
-            -moz-transition: all 0.5s ease-in;
-            -o-transition: all 0.5s ease-in;
-            transition: all 0.5s ease-in;
-            box-shadow: inset 0 0 0 0 rgba(0,0,0,0.6), 0 0 10px rgba(0,0,0,0.3);
 }
 
 /* bus section*/
@@ -200,7 +199,7 @@ position:relative;
 }
 
 /* bottom background*/
-#div5 {
+#div4 {
   background: #1453b8;
   height:15%;
   width:100%;
@@ -227,7 +226,7 @@ a:hover {
 
 /* footer*/
 .main {
-width:42vh;
+width:39vh;
 height:5vh;
 margin-left: auto;
 margin-right: auto;
@@ -247,28 +246,28 @@ height:3vh;
 #up1 {
   height:3vh;
   width: 3vh;
-  margin-top: 1.7vh;
+  margin-top: 1.6vh;
 }
 
 #up2 {
   height:3vh;
-  width: 15vh;
+  width: 13vh;
 margin-left: 1vh;
 padding-top: 0;
-font-size:2vh;
+font-size:1.8vh;
 }
 
 #up3 {
   height:3vh;
   width: 3vh;
-  margin-top: 1.7vh;
+  margin-top: 1.6vh;
 }
 
 #up4 {
   height:3vh;
   width: 18vh;
 margin-left: 1vh;
-font-size:2vh;
+font-size:1.8vh;
 padding-top: 0;
 }
 
@@ -282,17 +281,22 @@ margin-bottom: 0px;
 text-align:center;
 padding:0px;
 font-family: "roboto";
-font-size: 12px; font-size:2vh;
+font-size:1.8vh;
 color:#ffffff;
 padding-left: auto;
 padding-right: auto;
 clear: both;
 }
 
+#pbfooter{
+  height:10vw;
+  width: 100%;
+}
+
 /* Version history page */
 #scrollbox {
-height:36vw;
-width: 36vw;
+height:40vh;
+width: 40vw;
 margin-left: auto;
 margin-right: auto;
 background-color: #ffffff;
@@ -307,7 +311,7 @@ margin: auto;
 font-family: "roboto";
 font-size: 1.4vw;
 vertical-align: middle;
-padding-top: 2%;
+padding: 1%;
 }
 
 #scroll {
@@ -342,11 +346,11 @@ background: #a8a6a8;
 box-shadow: inset 0 0 6px #cfcbcf;
 }
 
-.fixed {background-color: #f976b3;
+.fixed {background-color: #fb8998;
 border-radius: 2px;
 font-size: 1vw;
 }
-.new {background-color: #52ff71;
+.new {background-color: #57e5b6;
 border-radius: 2px;
 font-size: 1vw;
 }
