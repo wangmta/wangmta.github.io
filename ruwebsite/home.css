@@ -1,77 +1,65 @@
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/* Styles */
-
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen
-and (min-width : 321px) {
-/* Styles */
-}
-
 /* Smartphones (portrait) ----------- */
-@media screen and (max-width: 600px) {
+@media only screen and (max-width:500px) {
 /* Styles */
-body{overflow:hidden;}
-#div2{
-  width:80%;
+html body {width: 100%;
+  overflow-x: hidden;
+  }
+body #div1{
+  min-height:250px;
+  max-height:260px;
+  background-color: #ffffff;
+  }
+div #bkpic  {display: none;}
+body #div2{
+  width: 100%;
+  min-height:245px;
+  max-height:250px;
   margin-left: auto;
   margin-right: auto;
-}
-#box1{width:100%;}
-#rutext {font-size: 7vw;line-height: 150%;}
-#intro {font-size: 5vw;}
-.img {
+  }
+body #box1{min-width:70%;max-height: 190px; margin-left: 20%;margin-top: 8vh;}
+body #rutext{font-size: 3vw;line-height: 150%;color: black; font-weight: bold;}
+body #box1 > p {text-shadow: none;}
+body #intro{font-size: 2.5vw;color: black;}
+div .img{
   width:80%;
+  min-width: 100px;
+  max-width: 115px;
   height:auto;
   margin: 0px;
 }
+.pic {width: 50%;}
+.ulist ul li{
+display:none;
+}
+div .ulist {
+  width: 50vw;
+  height:20vw;
+  background-image: url("bustext.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 25%;
+  }
+div .des > p {
+    font-weight: 700;
+    }
+div .ulist1 {
+   width: 75%;
+   padding: 0;
+   margin-left: 17%;
+ }
+div .ulist1 ul {
+  margin: 0;
+  padding: 0;
+}
+div .ulist1 ul li{
+    font-weight: 700;
+    margin-left: 1%;
+    margin-right:2%;
+    padding: 0;
+    }
 }
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
-/* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape) {
-/* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
-/* Styles */
-}
-
-/* Desktops and laptops ----------- */
-@media only screen
-and (min-width : 1224px) {
-/* Styles */
-body {min-height: 900px;}
-}
-
-/* Large screens ----------- */
-@media only screen
-and (min-width : 1824px) {
-/* Styles */
-body {min-height: 1200px;}
-}
-
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
-}
 
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{
@@ -86,8 +74,84 @@ body{
     font-family: "roboto";
     src: url(roboto-regular.ttf);
 }
-/* banner*/
 
+.headline {
+  float: left;
+  margin-left: 10%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.headtext {
+  font-family: "roboto";
+  font-size: 2.7vw;
+  font-weight: bold;
+  color: black;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.ulist {
+  width: 100%;
+  max-height: 40px;
+  float: left;
+}
+ul{
+    list-style-type: none;
+  }
+li{
+  font-family: "roboto";
+  font-size: 2vw;
+  font-weight: 300;
+  color: black;
+  display:inline;
+  margin-left: 3%;
+  margin-right:5%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.des{
+  width: 40%;
+  height: auto;
+  float: left;
+  margin-left: 30%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 3%;
+  z-index: 100;
+}
+.des > p {
+  font-family: "roboto";
+  font-size: 2vw;
+  font-weight: 300;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+.ulist1 {
+  width: 80%;
+  max-height: 40px;
+  margin-left: 10%;
+  float: left;
+  position: relative;
+  margin-bottom: 0;
+  padding: 0;
+  z-index: 100;
+}
+.ulist1 ul li{
+  display: inline-block;
+  font-family: "roboto";
+  font-size: 2vw;
+  font-weight: 300;
+  color: black;
+  margin-left: 3%;
+  margin-right:2%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* banner*/
 #banner {
 background: rgba(20, 83, 184, 0.84);
 position:fixed;
@@ -133,7 +197,7 @@ box-shadow: -1px 2px 21px -1px rgba(102,99,102,1);
   float:left;
   position: absolute;
   top: 0;
-  left: 10;
+  left: 0;
   z-index: 10;
 }
 
@@ -154,7 +218,7 @@ box-shadow: -1px 2px 21px -1px rgba(102,99,102,1);
   height:40vh;
   width:50%;
   margin-top: 20%;
-  margin-left: 40%;
+  margin-left: 35%;
   align-content: center;
 }
 
@@ -201,7 +265,7 @@ position:relative;
   height:15%;
   width:100%;
   position:absolute;
-  margin:0px;
+  margin-top: 5%;
   padding-top: 3vh;
 }
 
