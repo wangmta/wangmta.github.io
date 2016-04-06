@@ -1,11 +1,13 @@
 (function() {
    $(window).scroll(function() {
-      if ($(this).scrollTop() > 300) {
-         $('#topimg').fadeIn(200);
-      } else {
-         $('#topimg').fadeOut(200);
-      }
-   });
+
+    if ($(window).width() < 550) {
+      $('#topimg').hide(); }
+    else {
+           if ($(this).scrollTop() > 300) {    $('#topimg').fadeIn(200);} 
+           else {  $('#topimg').fadeOut(200); }
+         }
+    });
 
 // not necessary
    $('#topimg').click(function(event) {
