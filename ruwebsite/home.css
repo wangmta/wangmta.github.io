@@ -1,3 +1,6 @@
+/* home page */
+
+/* media queries */
 /* Iphone 5s (portrait) ----------- */
 @media only screen and (max-width:400px) {
 /* Styles */
@@ -48,7 +51,7 @@ div #line2, div #line3 {
   width: 100%;
 }
 body #div4 {
-  height: 80px;
+  height: 110px;
   padding-top: 20px;
 }
 div .a, div #down {font-size: 9px;}
@@ -103,7 +106,7 @@ div #bus, div #bookmark, div #news {
 }
 body #hiddenline{
   width: 100%;
-  height: 5%;
+  height: 5%;file:///C:/Users/admin/OneDrive/Design/Rutgers%20Mobile%20Web/news.jpg
   display:inline-block;
   margin-top: 5px;
   padding: 0;
@@ -115,7 +118,7 @@ div #line2, div #line3 {
 div .a, div #down {font-size: 10px;}
 div .b {height: 12px; width: 12px;}
 body #div4 {
-  height: 80px;
+  height: 85px;
   padding-top: 25px;
 }
 
@@ -131,7 +134,7 @@ div #div00 {
 }
 }
 
-/* Small Tablets (portrait) ----------- */
+/* small tablets (portrait) ----------- */
 @media only screen and (max-width:750px) and (min-width:551px) {
   div #div0 {
     width: 100%;
@@ -173,7 +176,7 @@ div #div00 {
   }
 }
 
-/* large Tablets (portrait) ----------- */
+/* large tablets, laptop screen (portrait) ----------- */
 @media only screen and (max-width:1200px) and (min-width:751px) {
   body #div1{
     width: 100%;
@@ -397,7 +400,7 @@ a:hover {
 }
 
 /* footer*/
-.a { font-family: "roboto"; font-size: 17px; margin: 0;}
+.a { font-family: "roboto"; font-size: 17px; }
 .b {
 width:17px;
 height:17px;
@@ -412,12 +415,20 @@ padding: 0;
     padding:0;
     text-align:center;
 }
+
 .nav li{ display:inline;}
 
-.nav a{
-    display:inline-block;
-    padding:1px;
-}
+.nav li p { color:#ffffff; width: 168px; height: 24px; border-radius: 5px; 
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+background: #7d7e7d; /* Old browsers */
+background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+
+margin:5px 10px 5px 10px; display:inline-block;  padding-top:4px; line-height: 100%;}
+
+.nav li p:hover {cursor: pointer;} 
 
 #down {
   width:100%;
@@ -450,78 +461,7 @@ clear: both;
    opacity: .5;
 }
 
-/* Version history page */
-#scrollbox {
-height:35vw;
-width: 35vw;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 0;
-background-color: #ffffff;
-box-shadow: 0px 0px 5px 3px #cfcbcf;
-border-radius: 1vh;
-}
 
-#scrollhead {
-height:15%;
-width:85%;
-margin-left:auto;
-margin-right: auto;
-margin-top: 0;
-padding-top: 2%;
-font-family: "roboto";
-font-size: 1.4vw;
-}
-
-#scrolltext {
-font: 1.05vw "roboto";
-height:76%;
-width:85%;
-margin: auto;
-overflow:auto;
-overflow-x: hidden;
-padding-right: 3%;
-line-height: 200%;
-}
-
-#scrolltext p {
-  margin:0;
-  padding:0;
-}
-
-#div00 {display: none;}
-
-/* Scrollbar styles */
-::-webkit-scrollbar {
-width: 1.5vh;
-height: 1.5vh;
-}
-
-::-webkit-scrollbar-track {
-background: #e8e5e8;
-border-radius: 1vh;
-box-shadow: inset 0 0 10px #cfcbcf;
-}
-
-::-webkit-scrollbar-thumb {
-border-radius: 1vh;
-background: #cfcdcf;
-box-shadow: inset 0 0 6px #757475;
-}
-
-::-webkit-scrollbar-thumb:hover {
-background: #a8a6a8;
-box-shadow: inset 0 0 6px #cfcbcf;
-}
-
-.fixed {background-color: #f6bdd4;
-border-radius: 2px;
-font-size: 1vw;
-}
-.new {background-color: #57e5b6;
-border-radius: 2px;
-font-size: 1vw;
-}
 
 /*Jquery effects*/
 

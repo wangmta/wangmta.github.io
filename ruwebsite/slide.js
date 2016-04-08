@@ -1,22 +1,43 @@
 var main = function() {
-  /* Push the body and the nav over*/
-  $('#sidebar').click(function() {
-    $('#slider').animate({ right: "0px"}, 800);
+    $('#contactuslink').click(function() {
+      $('#slider').slideDown(500);
+      $('#scrollbox').slideUp(300);
+    });
 
-    $('body').animate({ right: "330px" }, 800);
-  });
+    $('#close').click(function() {
+      $('#slider').slideUp(500);
+    });
 
-  /* Then push them back */
-  $('#close').click(function() {
-    $('#slider').animate({ right: "-343px"}, 800);
+    $('#versionlink').click(function() {
+      $('#scrollbox').slideDown(500);
+      $('#slider').slideUp(300);
+    });
 
-    $('body').animate({ right: "0px", }, 800);
-  });
+    $('#close1').click(function() {
+      $('#scrollbox').slideUp(500);
+    });
+
+    $('#close , #close1').hover(function(){
+      $(this).toggleClass('activate');
+    });
 };
-
 
 $(document).ready(main);
 
+
+
+
+/*
+var slide = function(){
+
+   $('#contimg').click(function() {
+      $('.body').toggleClass('pushbody', 500);
+      $('#slider').toggleClass('pushmenu', 500);
+   });
+};
+
+$(document).ready(slide);
+*/
 
 /*
   $('#sidebar').click(function() {
@@ -42,4 +63,23 @@ $(document).ready(main);
   });
   
   $('.btn').addClass('disabled');
+
+
+
+
+var main = function() {
+    $('#sidebar').click(function() {
+    $('#slider').animate({ right: "0px"}, 600);
+    $('.body').animate({ right: "-342px" }, 600);
+  });
+
+  $('#close').click(function() {
+    $('#slider').animate({ right: "-342px"}, 600);
+
+    $('.body').animate({ right: "0px", }, 600);
+  });
+};
+
+$(document).ready(main);
+
 */

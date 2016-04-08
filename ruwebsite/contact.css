@@ -1,14 +1,19 @@
+/* contact us page */
+
 /* external font */
 @font-face {
     font-family: "roboto";
     src: url(roboto-regular.ttf);
 }
 
+/*
 body {
 overflow:hidden;
 width:100%;
+height: 100%;
 margin:10px auto;
 }
+*/
 
 #headline {
 border-bottom:1px dotted #d8d8d8;
@@ -18,47 +23,36 @@ font-family: "roboto";
 }
 
 #slider {
-width:500px;
-height: 700px;
-top:30px;
-position:absolute;
-background-color: #ffffff;
+width:350px;
+height: 550px;
+position:relative;
+margin-left: auto;
+margin-right: auto;
+display: none;
 }
 
 #header {
 width:260px;
 height:500px;
-position:absolute;
-right:0;
+position:relative;
+left:0;
 border:1px solid #d8d8d8;
-margin-left:40px;
+margin-left:0;
 padding:20px 40px;
 border-radius:3px;
 box-shadow:0 0 8px gray;
 overflow: auto;
 overflow-x:hidden;
+background: #ffffff;
 }
 
-#sidebar {
-position:absolute;
-top:220px;
-left:127px;
-}
+.head {display: inline-block;}
 
-#sidebar1 {
-position:absolute;
-top:220px;
-left:127px;
-}
+#close {width: 20px; height: auto}
 
-#close {width: 20px; height: auto; right:0px;}
+h2{margin-right: 110px;}
 
-#contimg {
-height: 110px;
-width: auto;	
-}
-
-h3, h4 {
+h2, h3, h4 {
 font-family:"roboto";
 }
 h4 {
@@ -113,25 +107,5 @@ cursor:pointer;
 margin-top:25px;
 }
 
-.blueborder{
-border:3px solid #98d0f1;
-}
-
-/*scrollbar effects*/
-
-::-webkit-scrollbar-track {
-background: #e8e5e8;
-border-radius: 1vh;
-box-shadow: inset 0 0 10px #cfcbcf;
-}
-
-::-webkit-scrollbar-thumb {
-border-radius: 1vh;
-background: #cfcdcf;
-box-shadow: inset 0 0 6px #757475;
-}
-
-::-webkit-scrollbar-thumb:hover {
-background: #a8a6a8;
-box-shadow: inset 0 0 6px #cfcbcf;
-}
+/* Jquery addclass*/
+.activate {opacity: 0.6;}

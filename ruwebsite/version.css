@@ -1,0 +1,78 @@
+/* version history page */
+#close1 {width: 20px; height: auto;}
+
+#scrollbox {
+display: none;  
+height:35vw;
+width: 35vw;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 0;
+background-color: #ffffff;
+box-shadow: 0px 0px 5px 3px #cfcbcf;
+border-radius: 1vh;
+}
+
+#scrollhead {
+height:15%;
+width:85%;
+margin-left:auto;
+margin-right: auto;
+margin-top: 0;
+padding-top: 2%;
+font-family: "roboto";
+font-size: 1.4vw;
+position: relative;
+}
+
+#close1box {position:absolute; right:0px; margin-top:7px;}
+
+#scrolltext {
+font: 1.05vw "roboto";
+height:76%;
+width:85%;
+margin: auto;
+overflow:auto;
+overflow-x: hidden;
+padding-right: 3%;
+line-height: 200%;
+}
+
+#scrolltext p {
+  margin:0;
+  padding:0;
+}
+
+#div00 {display: none;}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+width: 1.5vh;
+height: 1.5vh;
+}
+
+::-webkit-scrollbar-track {
+background: #e8e5e8;
+border-radius: 1vh;
+box-shadow: inset 0 0 10px #cfcbcf;
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 1vh;
+background: #cfcdcf;
+box-shadow: inset 0 0 6px #757475;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #a8a6a8;
+box-shadow: inset 0 0 6px #cfcbcf;
+}
+
+.fixed {background-color: #f6bdd4;
+border-radius: 2px;
+font-size: 1vw;
+}
+.new {background-color: #57e5b6;
+border-radius: 2px;
+font-size: 1vw;
+}
