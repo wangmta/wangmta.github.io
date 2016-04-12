@@ -1,5 +1,63 @@
 /* contact us page */
 
+/* small tablets (portrait) ----------- */
+@media only screen and (max-width:750px) and (min-width:551px) {
+ 
+ body #slider {
+   width: 400px;
+   height: 480px;
+ }
+ div #header {
+   width: 320px;
+   height: 460px;
+ } 
+
+ div select {
+   padding:6px;
+   width:98.7%;
+ }
+}
+
+/* large tablets, laptop screen (portrait) ----------- */
+@media only screen and (max-width:1200px) and (min-width:751px) {
+ 
+ body #slider {
+   width: 430px;
+   height: 480px;
+ }
+ div #header {
+   width: 350px;
+   height: 460px;
+ } 
+
+ div select {
+   padding:6px;
+   width:98.7%;
+ }
+}
+
+/* large screen (landscape) ----------- */
+@media only screen and (min-width:1201px) {
+
+ body #slider {
+   width: 450px;
+   height: 480px;
+ }
+ div #header {
+   width: 370px;
+   height: 460px;
+ } 
+
+ div select {
+   padding:6px;
+   width:98.5%;
+ }
+ div button {
+   width:98.2%;
+ } 
+
+}
+
 /* external font */
 @font-face {
     font-family: "roboto";
@@ -23,8 +81,8 @@ font-family: "roboto";
 }
 
 #slider {
-width:350px;
-height: 550px;
+width:340px;
+height: 510px;
 position:relative;
 margin-left: auto;
 margin-right: auto;
@@ -33,12 +91,12 @@ display: none;
 
 #header {
 width:260px;
-height:500px;
+height:480px;
 position:relative;
 left:0;
 border:1px solid #d8d8d8;
 margin-left:0;
-padding:20px 40px;
+padding:10px 40px;
 border-radius:3px;
 box-shadow:0 0 8px gray;
 overflow: auto;
@@ -48,15 +106,20 @@ background: #ffffff;
 
 .head {display: inline-block;}
 
-#close {width: 20px; height: auto}
+#close {width: 20px; height: auto;}
 
-h2{margin-right: 110px;}
+#closebox {position:absolute; right:40px; top:25px;}
+
+h2{padding: 0; margin-top: 10px; margin-bottom: 0px;}
 
 h2, h3, h4 {
 font-family:"roboto";
 }
 h4 {
-font-size:15px
+font-size:15px;
+padding: 0;
+margin-top: 0;
+margin-bottom: 10px;
 }
 
 input[type=text] {
