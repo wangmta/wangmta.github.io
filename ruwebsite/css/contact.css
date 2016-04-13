@@ -1,5 +1,25 @@
 /* contact us page */
 
+/* Iphone 5s (portrait) ----------- */
+@media only screen and (max-width:400px) {
+  
+  body #slider {
+   width:303px;
+   height:440px;
+  }
+
+ div #header {
+   width:270px;
+   height:420px;
+   padding: 10px 15px 15px 15px;
+ } 
+ div #closebox {right:20px;}
+ div #headline {
+   font-size: 14px;
+ }
+ div input[type=text], div select {font-size: 14px;}
+}
+
 /* small tablets (portrait) ----------- */
 @media only screen and (max-width:750px) and (min-width:551px) {
  
@@ -58,11 +78,6 @@
 
 }
 
-/* external font */
-@font-face {
-    font-family: "roboto";
-    src: url(roboto-regular.ttf);
-}
 
 /*
 body {
@@ -82,7 +97,7 @@ font-family: "roboto";
 
 #slider {
 width:340px;
-height: 510px;
+height: 490px;
 position:relative;
 margin-left: auto;
 margin-right: auto;
@@ -91,7 +106,7 @@ display: none;
 
 #header {
 width:260px;
-height:480px;
+height:460px;
 position:relative;
 left:0;
 border:1px solid #d8d8d8;
@@ -132,7 +147,7 @@ border:1px solid #858480;
 }
 
 select {
-padding:6px;
+padding:6px 6px 6px 3px;
 width:100%;
 font-size:15px;
 border-radius:2px;
@@ -147,12 +162,13 @@ border:1px solid #858480;
 margin-top:10px;
 height:80px;
 width:94.5%;
+font-family: "roboto";
 }
 
 #checkboxcontainer {
 font-family: "roboto";
 margin: 0;
-padding: 0;
+padding: 0px 0px 0px 6px;
 }
 
 #clientinfo {display: none; width: 100%; background: #ffffff;}
@@ -167,7 +183,7 @@ font-weight:bolder;
 padding:8px 0;
 border-radius:3px;
 cursor:pointer;
-margin-top:25px;
+margin-top:20px;
 }
 
 /* Jquery addclass*/
