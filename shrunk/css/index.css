@@ -2,38 +2,38 @@
 html{margin:0; padding:0; overflow-x: hidden; border: 0; outline: 0;}
 
 body{
-margin:0; padding:0; border: 0; outline: 0;
-background:url('../assets/purebg.jpg') center;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-background-repeat: no-repeat;    
-overflow-x: hidden;
-min-height: 100%;
-/* equal to footer height */     
+    margin:0; padding:0; border: 0; outline: 0;
+    background:url('../assets/purebg.jpg') center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    overflow-x: hidden;
+    min-height: 100%;
+    /* equal to footer height */     
 }
 
 nav.navbar {
-border-radius: 0px; border: 0px; background-color: rgba(255,255,255,0);    
+    border-radius: 0px; border: 0px; background-color: rgba(255,255,255,0);    
 }
 
 
 
 #rulogo {
-width: 70%; height: auto%; margin-top:5%; position: relative; margin-bottom: 40px;    
+    width: 70%; height: auto%; margin-top:5%; position: relative; margin-bottom: 40px;    
 }
 
 .jumbotron{
-padding: 0; margin: 0; border:0px; background-color: rgba(255,255,255,0);
+    padding: 0; margin: 0; border:0px; background-color: rgba(255,255,255,0);
 }
 
 #subjumbo{
-position:inherit; height: auto; width:60%; margin-left:20%; padding-left:0; padding-right: 0;    
+    position:inherit; height: auto; width:60%; margin-left:20%; padding-left:0; padding-right: 0;    
 }
 
 #logobox{
-padding-top:0;	
+    padding-top:0;	
 }
 
 .breadcrumb, footer{ background: #EEEEEE; }
@@ -43,101 +43,101 @@ padding-top:0;
 
 
 .btn:hover{
-top:0.5px; left:1px; border: 0px;
--webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.45);
--moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.45);
-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.45);    
+    top:0.5px; left:1px; border: 0px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.45);    
 }
 
 .btn:active, html:active, body:active {
-outline: none;
-border: none;
+    outline: none;
+    border: none;
 }
 
 .btn:focus, html:focus, body:focus  {outline:0;}
 
 #copyright{
-margin-bottom: 15px; font-size:14px;	
+    margin-bottom: 15px; font-size:14px;	
 }
 
 #focuspic{
-width: 40%; height: auto;
+    width: 40%; height: auto;
 }
 
 #linktitle{
-padding-left: 4px; padding-bottom: 5px; overflow: hidden; padding-right: 0; width: 70%;   
+    padding-left: 4px; padding-bottom: 5px; overflow: hidden; padding-right: 0; width: 70%;   
 }
 
 #linktitle:hover{
-color:white; cursor:pointer; 
+    color:white; cursor:pointer; 
 }
 
 form > div{
-margin-bottom: 8px; width:60%; margin-left: auto; margin-right: auto;    
+    margin-bottom: 8px; width:60%; margin-left: auto; margin-right: auto;    
 }
 
 #history{
-margin-top: 0x; margin-bottom: 0; padding: 0;
+    margin-top: 0x; margin-bottom: 0; padding: 0;
 }
 
 ul#pagination {
-margin:0 auto 0 auto;
+    margin:0 auto 0 auto;
 }
 
 ul#pagination li a{
-background-color: rgba(255, 255, 255, 0.4); color: black; border:0;    
+    background-color: rgba(255, 255, 255, 0.4); color: black; border:0;    
 }
 
 ul#pagination li.active a{
-background-color: rgba(255, 255, 255, 0.6); color: black; border:0;    
+    background-color: rgba(255, 255, 255, 0.6); color: black; border:0;    
 }
 
 #searchList {
-background-color: rgba(255, 255, 255, 0.6); border:0; height:28px;
+    background-color: rgba(255, 255, 255, 0.6); border:0; height:28px;
 }
 
 #hiddentoggle{
-margin-bottom: 20px; padding: 0; display: none;
+    margin-bottom: 20px; padding: 0; display: none;
 }
 
 #box1{
-padding-bottom: 0px; margin-bottom: 0px;
+    padding-bottom: 0px; margin-bottom: 0px;
 }
 
 table{
-margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .imgtitle{
-font-weight:bold; color:white; 	
+    font-weight:bold; color:white; 	
 }
 
 .img-responsive{
-margin-left: auto; margin-right: auto; width: 70%;
+    margin-left: auto; margin-right: auto; width: 70%;
 }
 
 .modalimg{
-width: 100%;	
+    width: 100%;	
 }
 
 #myTable_length{
-display: none;
+    display: none;
 }
 
 #myTable thead tr th:nth-child(1) input{
-visibility:hidden;
+    visibility:hidden;
 }
 
 #myTable thead tr th:nth-child(6){
-text-align:center;
+    text-align:center;
 }
 
 .odd td{
-background-color: rgba(255, 255, 255, 0.1);	
+    background-color: rgba(255, 255, 255, 0.1);	
 }
 
 #page {
-padding-top:5px; margin-top:10px; 	
+    padding-top:5px; margin-top:10px; 	
 }
 
 /*
@@ -151,8 +151,8 @@ overflow-y:auto;
 */
 
 #inputGroup {
-height: 0; margin-bottom:0; margin-top: 0; background: rgba(255,255,255,0.4); border-radius: 4px; transition: 0.4s cubic-bezier(1, .01, .27, 1.01);
-/*display: none;   */
+    height: 0; margin-bottom:0; margin-top: 0; background: rgba(255,255,255,0.4); border-radius: 4px; transition: 0.4s cubic-bezier(1, .01, .27, 1.01);
+    /*display: none;   */
 }
 
 /* -----animation----- */
