@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="gitSearch">
+
+<head>
+  <link data-require="angular.js@1.5.0" data-semver="1.5.0" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <link data-require="angular.js@1.5.0" data-semver="1.5.0" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <script data-require="angular.js@1.5.0" data-semver="1.5.0" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
+  <script data-require="angular.js@1.5.0" data-semver="1.5.0" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.2.4/ui-bootstrap-tpls.min.js"></script>
+  <script data-require="angular.js@1.5.0" data-semver="1.5.0" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-animate.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body ng-controller="MainController">
+  <h1>{{message}}</h1>
+  <div>{{error}}</div>
+
+  <form name="searchUser" ng-submit="search(username)">
+    <input type="search" required placeholder="search here" ng-model="username" />
+    <input type="submit" value="Search">
+  </form>
+  <p>{{countdown}}</p>
+
+  <main ng-include="'details.html'" ng-show="user">
+   
+  </main>
+
+</body>
+
+</html>
