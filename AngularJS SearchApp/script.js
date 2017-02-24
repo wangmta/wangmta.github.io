@@ -21,13 +21,13 @@
     };
     
     $scope.search = function(username){
-       $log.info("search for " + username);
-       $http.get("https://api.github.com/users/" + username)
-       .then(onUserComplete, ifError);
-       if(cdInterval){
-         $interval.cancel(cdInterval);
-         $scope.countdown = null;
-       }
+      $log.info("search for " + username);
+      $http.get("https://api.github.com/users/" + username)
+      .then(onUserComplete, ifError);
+      if(cdInterval){
+        $interval.cancel(cdInterval);
+        $scope.countdown = null;
+      }
     };
     
     var countDownFun = function(){
@@ -43,8 +43,8 @@
     };
     
     $scope.username = "angular";
-    $scope.message = "Github search";
-    $scope.countdown = 5;
+    $scope.message = "Github Repo Search";
+    $scope.countdown = 2;
     startCountDown();
     
   };
